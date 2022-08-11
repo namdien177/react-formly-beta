@@ -1,10 +1,10 @@
-import { UPDATE_ON } from "./types/index";
-import { ChangeEvent, FocusEvent } from "react";
-import useFormValue from "./hooks/form-value";
-import useFormConfig, { FormConfig } from "./hooks/form-config";
-import useFormValidator, { FormValidator } from "./hooks/form-validator";
-import useFormStatus from "./hooks/form-status";
-import { FormControl } from "./core/form-control";
+import { ChangeEvent, FocusEvent } from 'react';
+import { UPDATE_ON } from './types';
+import useFormValue from './hooks/form-value';
+import useFormConfig, { FormConfig } from './hooks/form-config';
+import useFormValidator, { FormValidator } from './hooks/form-validator';
+import useFormStatus from './hooks/form-status';
+import { FormControl } from './core/form-control';
 
 const useFormly = <T>(opts?: {
   validators?: FormValidator<Partial<T>>;

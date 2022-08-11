@@ -49,7 +49,6 @@ function App() {
       {JSON.stringify(errors, null, 2)}
       <br />
       <hr />
-
       <button onClick={() => patchState({ dirty: false })}>Reset dirty</button>
       <br />
       <button onClick={() => validate(value)}>validate</button>
